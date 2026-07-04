@@ -100,7 +100,6 @@ CurrencyItem Mat_Blaster_Common_01 < uid=E42FA10C60D31106000531FBF190AF2C > : ma
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item Ray Accelerator (R_SmallMechanical_02)\", enabled = true, guid = #2AE2EC8565E84AB30005275AB799EBE3, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in <b>Imperial locations or hidden by smugglers.</b>\n\nCan be purchased from <b>armorers.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find material item Ray Accelerator (R_SmallMechanical_02). Should be the same as the line that describes where to find the item.\", enabled = true, guid = #2AE2EC8565E873BD00083E586F5DEDF8, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in Imperial locations or hidden by smugglers.\n\nCan be purchased from tech merchants.\", type = \"MenuLine\""
 	myIcon "mySpriteId = -1321769277, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_05.spritesheet\""
-	myCategory PartBlaster
 	myBuyPrice 220
 }
 
@@ -112,7 +111,6 @@ CurrencyItem Mat_Blaster_Common_02 < uid=E42FA10C60D31106000531FE006F9A19 > : ma
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item Actuating Module (R_SmallMechanical_03)\", enabled = true, guid = #2AE2EC8565E84AB30005275BA5B43B8D, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in <b>Imperial locations or hidden by smugglers.</b>\n\nCan be purchased from <b>armorers.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find material item Actuating Module (R_SmallMechanical_03). Should be the same as the line that describes where to find the item.\", enabled = true, guid = #2AE2EC8565E873BF00083E5A328A8810, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in Imperial locations or hidden by smugglers.\n\nCan be purchased on the black market.\", type = \"MenuLine\""
 	myIcon "mySpriteId = -503133972, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_05.spritesheet\""
-	myCategory PartBlaster
 	myBuyPrice 280
 }
 
@@ -124,7 +122,6 @@ CurrencyItem Mat_Blaster_Common_03 < uid=E42FA10C62B2C63E0002016F8D71283C > : ma
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item Cryo-Coil (R_SmallMechanical_04)\", enabled = true, guid = #2AE2EC8565E84AB30005275C81BEC6F0, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in <b>Imperial locations or hidden by smugglers.</b>\n\nCan be purchased from <b>armorers.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find material item Cryo-Coil (R_SmallMechanical_04). Should be the same as the line that describes where to find the item.\", enabled = true, guid = #2AE2EC8565E873C100083E5C0CE1CDB3, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in Imperial locations or hidden by smugglers.\n\nCan be purchased from tech merchants.\", type = \"MenuLine\""
 	myIcon "mySpriteId = -699997458, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_05.spritesheet\""
-	myCategory PartBlaster
 	myBuyPrice 300
 }
 
@@ -136,7 +133,6 @@ CurrencyItem Mat_Blaster_Common_04 < uid=F4D8AE2664F5EC0F00037073902288BC > : ma
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item Ion Cell (R_Electronics_03)\", enabled = true, guid = #2AE2EC8565E84AB30005275F6E815F34, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in <b>Imperial locations or hidden by smugglers.</b>\n\nCan be purchased from <b>armorers.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find material item Ion Cell (R_Electronics_03). Should be the same as the line that describes where to find the item.\", enabled = true, guid = #2AE2EC8565E873C800083E6240ABEA4A, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in Imperial locations or hidden by smugglers.\n\nCan be purchased on the black market.\", type = \"MenuLine\""
 	myIcon "mySpriteId = -548997141, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_05.spritesheet\""
-	myCategory PartBlaster
 	myBuyPrice 240
 }
 
@@ -148,7 +144,6 @@ CurrencyItem Mat_Blaster_Common_05 < uid=F4D8AE2664F5ED26000370F4CCF846D8 > : ma
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item MG-2 Power Exceeder (R_LargeMechanical_03)\", enabled = true, guid = #2AE2EC8565E84AB300052763F4EEFA3F, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in <b>Imperial locations or hidden by smugglers.</b>\n\nCan be purchased from <b>armorers.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find material item MG-2 Power Exceeder (R_LargeMechanical_03). Should be the same as the line that describes where to find the item.\", enabled = true, guid = #2AE2EC8565E873CF00083E6ABA46127A, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in Imperial locations or hidden by smugglers.\n\nCan be purchased on the black market.\", type = \"MenuLine\""
 	myIcon "mySpriteId = -1926040921, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_05.spritesheet\""
-	myCategory PartBlaster
 	myBuyPrice 325
 }
 
@@ -160,7 +155,6 @@ CurrencyItem Mat_Blaster_Rare_01 < uid=2AE2EC85645516BD0000B6254425158C > : mat_
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item Blaster Recirculator (KP_Blaster_01_AnyPartLvl2).\", enabled = true, guid = #2AE2EC8565E88738000000C2C6E32A9D, lineVersion = 5, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in <b>Imperial compound vaults.</b>\n\nSold by a few <b>armorers with deep connections in the underworld.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find material item Blaster Recirculator (KP_Blaster_01_AnyPartLvl2). Should be the same as the line that describes where to find the item.\", enabled = true, guid = #2AE2EC8565E88739000000C33EB9D7C7, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in Imperial compound vaults.\n\nSold by a few merchants with deep connections in the underworld.\", type = \"MenuLine\""
 	myIcon "mySpriteId = -1304808307, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_02.spritesheet\""
-	myCategory PartBlaster
 	myTier Big
 	myBuyPrice 1500
 }
@@ -173,7 +167,6 @@ CurrencyItem Mat_Ship_Common_01 < uid=F4D8AE2664F5E9FB0003700F4DFB0712 > : mat_t
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item Quadanium (C_RawMaterial_07)\", enabled = true, guid = #2AE2EC8565E84AB3000527589116A70C, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found <b>across the galaxy.</b>\n\nCan be purchased from <b>merchants and survivalists.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find material item Quadanium (C_RawMaterial_07). Should be the same as the line that describes where to find the item.\", enabled = true, guid = #2AE2EC8565E8702C00083E5628289C48, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Easily found in space near ship wrecks.\n\nGenerally purchased from general goods merchants.\", type = \"MenuLine\""
 	myIcon "mySpriteId = -435286488, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_02.spritesheet\""
-	myCategory PartSpaceship
 	myTier Small
 	myBuyPrice 30
 }
@@ -186,7 +179,6 @@ CurrencyItem Mat_Ship_Common_02 < uid=F4D8AE2664F5EC0F0003707067208139 > : mat_t
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item Heuristic Processor (R_Electronics_02)\", enabled = true, guid = #2AE2EC8565E84AB30005275E6AED69B7, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in <b>areas controlled by pirates or in space.</b>\n\nCan be purchased from <b>scavengers.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find material item Heuristic Processor (R_Electronics_02). Should be the same as the line that describes where to find the item.\", enabled = true, guid = #2AE2EC8565E873C600083E60402127C2, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in areas controlled by pirates or in space.\n\nCan be purchased from tech merchants.\", type = \"MenuLine\""
 	myIcon "mySpriteId = 39484389, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_05.spritesheet\""
-	myCategory PartSpaceship
 	myBuyPrice 210
 }
 
@@ -198,7 +190,6 @@ CurrencyItem Mat_Ship_Common_03 < uid=F4D8AE2664F5EC0F00037076D0726351 > : mat_t
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item 4XB Calculation Unit (R_Electronics_04)\", enabled = true, guid = #2AE2EC8565E84AB300052760197F9D52, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in <b>areas controlled by pirates or in space.</b>\n\nCan be purchased from <b>scavengers.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find material item 4XB Calculation Unit (R_Electronics_04). Should be the same as the line that describes where to find the item.\", enabled = true, guid = #2AE2EC8565E873CA00083E6434DCA714, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in areas controlled by pirates or in space.\n\nCan be purchased on the black market.\", type = \"MenuLine\""
 	myIcon "mySpriteId = -793117308, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_05.spritesheet\""
-	myCategory PartSpaceship
 	myBuyPrice 290
 }
 
@@ -210,7 +201,6 @@ CurrencyItem Mat_Ship_Common_04 < uid=E42FA10C62B445CB000035FCF11008B7 > : mat_t
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item Enhanced Durasteel Hull (R_LargeMechanical_01)\", enabled = true, guid = #2AE2EC8565E84AB30005276191530CA6, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in <b>areas controlled by pirates or in space.</b>\n\nCan be purchased from <b>scavengers.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find material item Enhanced Durasteel Hull (R_LargeMechanical_01). Should be the same as the line that describes where to find the item.\", enabled = true, guid = #2AE2EC8565E873CB00083E666F76B645, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in areas controlled by pirates or in space.\n\nCan be purchased from junk merchants.\", type = \"MenuLine\""
 	myIcon "mySpriteId = 408945108, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_05.spritesheet\""
-	myCategory PartSpaceship
 	myBuyPrice 230
 }
 
@@ -222,7 +212,6 @@ CurrencyItem Mat_Ship_Rare_01 < uid=E42FA10C60CB5B9B0001574F215E3F5E > : mat_tem
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item\", enabled = true, guid = #D00CF654663A3B9E011D3FC83D746362, lineVersion = 6, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in <b>Space</b> or in <b>high-security areas in pirate controlled territories.</b>\n\nSold by a few <b>scavengers with deep connections in the underworld.</b>\", type = \"MenuLine\""
 	myHint "branch = \"MAIN\", contextComment = \"Describes where to find material item\", enabled = true, guid = #D00CF654663A3B9E011D3C872AA2C7F1, lineVersion = 5, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in <b>Space</b> or in <b>high-security areas in pirate controlled territories.</b>\n\nSold by a few <b>scavengers with deep connections in the underworld.</b>\", type = \"MenuLine\""
 	myIcon "mySpriteId = 1387441487, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_04.spritesheet\""
-	myCategory PartSpaceship
 	myTier Big
 	myBuyPrice 2000
 }
@@ -235,7 +224,6 @@ CurrencyItem Mat_Ship_Rare_02 < uid=F4D8AE26650023C70000B7D42E595AE6 > : mat_tem
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item\", enabled = true, guid = #D00CF654663A3BE6012A348EFF5D9262, lineVersion = 5, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in <b>Space</b> or in <b>high-security areas in pirate controlled territories.</b>\n\nSold by a few <b>scavengers with deep connections in the underworld.</b>\", type = \"MenuLine\""
 	myHint "branch = \"MAIN\", contextComment = \"Describes where to find material item\", enabled = true, guid = #D00CF654663A3BE6012A31DC87A6DF97, lineVersion = 5, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in <b>Space</b> or in <b>high-security areas in pirate controlled territories.</b>\n\nSold by a few <b>scavengers with deep connections in the underworld.</b>\", type = \"MenuLine\""
 	myIcon "mySpriteId = -190364859, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_04.spritesheet\""
-	myCategory PartSpaceship
 	myTier Big
 	myBuyPrice 2000
 }
@@ -248,7 +236,6 @@ CurrencyItem Mat_Ship_Rare_03 < uid=E42FA10C60CB5B9B0001574E8163F788 > : mat_tem
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item\", enabled = true, guid = #D00CF654663A3BFC012E58645D0D5B59, lineVersion = 5, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in <b>Space</b> or in <b>high-security areas in pirate controlled territories.</b>\n\nSold by a few <b>scavengers with deep connections in the underworld.</b>\", type = \"MenuLine\""
 	myHint "branch = \"MAIN\", contextComment = \"Describes where to find material item\", enabled = true, guid = #D00CF654663A3BFC012E4B87C3FC5F37, lineVersion = 5, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in <b>Space</b> or in <b>high-security areas in pirate controlled territories.</b>\n\nSold by a few <b>scavengers with deep connections in the underworld.</b>\", type = \"MenuLine\""
 	myIcon "mySpriteId = 1191499434, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_04.spritesheet\""
-	myCategory PartSpaceship
 	myTier Big
 	myBuyPrice 2000
 }
@@ -261,7 +248,6 @@ CurrencyItem Mat_Ship_Rare_04 < uid=F4D8AE26650023C70000B7D79593ED9B > : mat_tem
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item\", enabled = true, guid = #D00CF654663A3C0F0131EDC7FF3B3C74, lineVersion = 5, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in <b>Space</b> or in <b>high-security areas in pirate controlled territories.</b>\n\nSold by a few <b>scavengers with deep connections in the underworld.</b>\", type = \"MenuLine\""
 	myHint "branch = \"MAIN\", contextComment = \"Describes where to find material item\", enabled = true, guid = #D00CF654663A3C0F0131CCE0ECE66D08, lineVersion = 5, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in <b>Space</b> or in <b>high-security areas in pirate controlled territories.</b>\n\nSold by a few <b>scavengers with deep connections in the underworld.</b>\", type = \"MenuLine\""
 	myIcon "mySpriteId = 487746972, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_04.spritesheet\""
-	myCategory PartSpaceship
 	myTier Big
 	myBuyPrice 2000
 }
@@ -274,7 +260,6 @@ CurrencyItem Mat_Speeder_Common_01 < uid=E42FA10C60D31106000531F90C34F89F > : ma
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item Helicyclic Gears (R_SmallMechanical_01)\", enabled = true, guid = #2AE2EC8565E84AB300052759D3C816DC, lineVersion = 6, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in <b>syndicate-controlled areas.</b>\n\nCan be purchased from <b>scavengers.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find material item Helicyclic Gears (R_SmallMechanical_01). Should be the same as the line that describes where to find the item.\", enabled = true, guid = #2AE2EC8565E86FF200083DE09275F638, lineVersion = 6, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in syndicate-controlled areas.\n\nCan be purchased from junk merchants.\", type = \"MenuLine\""
 	myIcon "mySpriteId = -364301011, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_05.spritesheet\""
-	myCategory PartSpeeder
 	myBuyPrice 250
 }
 
@@ -286,7 +271,6 @@ CurrencyItem Mat_Speeder_Common_02 < uid=5F6139B460A3DA0300000039098E28C6 > : ma
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item Direct-Energy Circuit (R_Electronics_01)\", enabled = true, guid = #2AE2EC8565E84AB30005275D12535EED, lineVersion = 5, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in <b>syndicate-controlled areas.</b>\n\nCan be purchased from <b>scavengers.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find material item Direct-Energy Circuit (R_Electronics_01). Should be the same as the line that describes where to find the item.\", enabled = true, guid = #2AE2EC8565E873C300083E5E50F11320, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in syndicate-controlled areas.\n\nCan be purchased from tech merchants.\", type = \"MenuLine\""
 	myIcon "mySpriteId = -595495933, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_04.spritesheet\""
-	myCategory PartSpeeder
 	myBuyPrice 160
 }
 
@@ -298,7 +282,6 @@ CurrencyItem Mat_Speeder_Common_03 < uid=F4D8AE2664F5ED26000370F12EE4774B > : ma
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find material item Accu-Accelerator (R_LargeMechanical_02)\", enabled = true, guid = #2AE2EC8565E84AB30005276290F26FEA, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in <b>syndicate-controlled areas.</b>\n\nCan be purchased from <b>scavengers.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find material item Accu-Accelerator (R_LargeMechanical_02). Should be the same as the line that describes where to find the item.\", enabled = true, guid = #2AE2EC8565E873CD00083E6897E2D832, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10323, text = \"Commonly found in syndicate-controlled areas.\n\nCan be purchased from junk merchants.\", type = \"MenuLine\""
 	myIcon "mySpriteId = -1108052482, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_05.spritesheet\""
-	myCategory PartSpeeder
 	myBuyPrice 260
 }
 
@@ -310,7 +293,6 @@ CurrencyItem Mat_Speeder_Rare_01 < uid=F4D8AE26650023C70000B7DA9845BEB5 > : mat_
 	myWhereToFind "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes where to find Moll K-19T Power Generator (KP_Speeder_01_EngineOrBoost_Max).\", enabled = true, guid = #2AE2EC8565E88FE900000100821C9E18, lineVersion = 7, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in high-security areas in syndicate-controlled territories.\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find Moll K-19T Power Generator (KP_Speeder_01_EngineOrBoost_Max).\", enabled = true, guid = #2AE2EC8565E88FEA00000101737D8D07, lineVersion = 5, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in high-security areas in syndicate-controlled territories.\", type = \"MenuLine\""
 	myIcon "mySpriteId = 407598782, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_04.spritesheet\""
-	myCategory PartSpeeder
 	myTier Big
 	myBuyPrice 2000
 }
@@ -323,7 +305,6 @@ CurrencyItem Mat_Speeder_Rare_02 < uid=F4D8AE26650023C70000B7DD8D983DEE > : mat_
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find Durasteel Chassi (KP_Speeder_02_ArmorOrHandling_Max).´\", enabled = true, guid = #2AE2EC8565E890E300000102B0BF3F23, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in <b>high-security areas in syndicate-controlled territories.</b>\n\nSold by a few <b>scavengers with deep connections in the underworld.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find Durasteel Chassi (KP_Speeder_02_ArmorOrHandling_Max).\", enabled = true, guid = #2AE2EC8565E890E40000010303175E8C, lineVersion = 5, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in high-security areas in syndicate-controlled territories.\", type = \"MenuLine\""
 	myIcon "mySpriteId = 985906167, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_02.spritesheet\""
-	myCategory PartSpeeder
 	myTier Big
 	myBuyPrice 2000
 }
@@ -336,7 +317,6 @@ CurrencyItem Mat_Speeder_Rare_03 < uid=F4D8AE266384837C000055785839C77F > : mat_
 	myWhereToFind "branch = \"MAIN\", contextComment = \"Describes where to find Repulsor Drive Adaptor (KP_Speeder_03_JumpOrLanding_Max).\", enabled = true, guid = #2AE2EC8565E890F100000104659DECA8, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in <b>high-security areas in syndicate-controlled territories.</b>\n\nSold by a few <b>scavengers with deep connections in the underworld.</b>\", type = \"MenuLine\""
 	myHint "aurabesh = false, branch = \"MAIN\", contextComment = \"Describes a hint to find Repulsor Drive Adaptor (KP_Speeder_03_JumpOrLanding_Max).\", enabled = true, guid = #2AE2EC8565E890F600000105FA1740A9, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 10322, text = \"Can be found in high-security areas in syndicate-controlled territories.\", type = \"MenuLine\""
 	myIcon "mySpriteId = 1807869462, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_materials_icons_04.spritesheet\""
-	myCategory PartSpeeder
 	myTier Big
 	myBuyPrice 2000
 }
