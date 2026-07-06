@@ -329,6 +329,9 @@ VendorSettings MainVendorSettings < uid=D9ED8AD460A6329E00000033949B4719 >
 	mySellableItemCategories
 	{
 		ItemCategory Material Material
+		ItemCategory PartBlaster PartBlaster
+		ItemCategory PartSpaceship PartSpaceship
+		ItemCategory PartSpeeder PartSpeeder
 		ItemCategory Trinket Trinket
 		ItemCategory Consumable Consumable
 		ItemCategory Valuable Valuable
