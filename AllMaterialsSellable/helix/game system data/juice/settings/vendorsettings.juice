@@ -1,0 +1,490 @@
+include "helix/game system data/fruit/settings/vendorsettings.fruit"
+include "helix/game system data/juice/gamestatistics/gs_dom_skills.mgamestatistic"
+include "helix/game system data/juice/item/currencies.mitem"
+include "helix/game system data/juice/item/dlc2_items_materials_valuables_and_key_parts.mitem"
+include "helix/game system data/juice/playerrestrictions/duringinteractionrestriction_openmenu.mplayerrestriction"
+include "helix/game system data/juice/rbtags/vendor.mrbtagsbinarytags"
+
+VendorSettings MainVendorSettings < uid=D9ED8AD460A6329E00000033949B4719 >
+{
+	myDefaultCurrency < uid=D9ED8AD460A632E600000034BA4A3209 > = Credits 83E36AE360487E88000000375F5EDD50
+	myBuyPriceModifiers
+	{
+		VendorPriceModifierReputation "Terrible Reputation"
+		{
+			myUIInfo
+			{
+				myName "aurabesh = false, contextComment = \"BuyPrice modifier for terrible reputation\", enabled = true, guid = #8778CD3662B312D40001539AA312C943, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 647, text = \"Terrible Reputation\", type = \"MenuLine\""
+				myDescription "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = 325541488, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_reputation_icons_01.spritesheet\""
+			}
+			myModifier 0.25
+			myRBTag < uid=1EC89F256401D958000CC818471B486E > = Agent_Vendor_TerribleReputationWithFaction 1EC89F2563FF1E41000008D489285E36
+			myCondition
+			{
+				myOperator Equal
+			}
+		}
+		VendorPriceModifierReputation "Bad Reputation"
+		{
+			myUIInfo
+			{
+				myName "aurabesh = false, contextComment = \"BuyPrice Modifier for Bad Reputation\", enabled = true, guid = #8778CD3662B3130D000167F402C75B45, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 647, text = \"Bad Reputation\", type = \"MenuLine\""
+				myDescription "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = 325755501, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_reputation_icons_01.spritesheet\""
+			}
+			myModifier 0.1
+			myRBTag < uid=1EC89F256401D958000CC81915C4870F > = NULLREFERENCE
+			myCondition
+			{
+				myReputationTier Bad
+				myOperator Equal
+			}
+		}
+		VendorPriceModifierReputation "Fair Reputation"
+		{
+			myUIInfo
+			{
+				myName "aurabesh = false, contextComment = \"BuyPrice Modifier for Fair Reputation\", enabled = true, guid = #8778CD3662B3132A000172651A771DA1, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 647, text = \"Fair Reputation\", type = \"MenuLine\""
+				myDescription "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = 325969514, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_reputation_icons_01.spritesheet\""
+			}
+			myModifier 0.0
+			myRBTag < uid=1EC89F256401D958000CC81AA2CC1149 > = NULLREFERENCE
+			myCondition
+			{
+				myReputationTier Fair
+				myOperator Equal
+			}
+		}
+		VendorPriceModifierReputation "Good Reputation"
+		{
+			myUIInfo
+			{
+				myName "aurabesh = false, branch = \"\", contextComment = \"BuyPrice Modifier for Good Reputation\", enabled = true, guid = #8778CD3662B3133F00017A0E5A817AEF, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 10706, text = \"Good Reputation\", type = \"MenuLine\""
+				myDescription "aurabesh = false, branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = 326183527, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_reputation_icons_01.spritesheet\""
+			}
+			myModifier -0.1
+			myRBTag < uid=1EC89F256401D958000CC81B6CED2B8A > = Agent_Vendor_GoodReputationBarksActive 1EC89F2563FF1E37000008D3B5AA960B
+			myCondition
+			{
+				myReputationTier Good
+				myOperator Equal
+			}
+		}
+		VendorPriceModifierReputation "Excellent Reputation"
+		{
+			myUIInfo
+			{
+				myName "aurabesh = false, contextComment = \"BuyPrice Modifier for Excellent Reputation\", enabled = true, guid = #8778CD3662B31358000182B1DF585BE7, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 647, text = \"Excellent Reputation\", type = \"MenuLine\""
+				myDescription "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = 326397540, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_reputation_icons_01.spritesheet\""
+			}
+			myModifier -0.25
+			myRBTag < uid=1EC89F256401D96E000CC81CF1284641 > = Agent_Vendor_ExcellentReputationBarksActive 1EC89F25645CE82E00099C02D6540E8C
+			myCondition
+			{
+				myReputationTier Excellent
+				myOperator Equal
+			}
+		}
+		VendorPriceModifierConditionList "Trusted Customer"
+		{
+			myUIInfo
+			{
+				myName "aurabesh = false, contextComment = \"BuyPrice Modifier for Trusted Customer\", enabled = true, guid = #3A296D0C62A05F45000033E176F1A6C0, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 459, text = \"Trusted Customer\", type = \"MenuLine\""
+				myDescription "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = -214532377, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_generic_01.spritesheet\""
+			}
+			myType TrustedCustomer
+			myModifier -0.1
+			myRBTag < uid=1EC89F256401E83C0002E8F946F45ED1 > = Agent_Vendor_TrustedCustomerBarksActive 1EC89F256401B61A0000D58ACE830A78
+			myCondition
+			{
+				myOperator Or
+				myConditions
+				{
+					GameConditionContextVendorCurrencySpent "Currency Spent >= 1500"
+					{
+						myAmount 1500
+					}
+					GameConditionGroup "Currency Spent >= 500  AND Personal Requests Done >= 1"
+					{
+						myConditions
+						{
+							GameConditionContextVendorCurrencySpent "Currency Spent >= 500"
+							{
+								myAmount 500
+							}
+							GameConditionContextVendorPersonalRequestsDone "Personal Requests Done >= 1"
+							{
+							}
+						}
+					}
+					GameConditionContextVendorTopCurrencySpentPerDay "Currency Spent Day >= 1000 over Number Days == 2"
+					{
+						myAmountSpentPerDay 600
+					}
+				}
+			}
+		}
+		VendorPriceModifierSuspicious Suspicious
+		{
+			myUIInfo
+			{
+				myName "aurabesh = false, contextComment = \"BuyPrice Modifier for Suspicious\", enabled = true, guid = #3A296D0C62B060C800007C2EE0DF00F8, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 647, text = \"Suspicious\", type = \"MenuLine\""
+				myDescription "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = 494659733, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_hud_01.spritesheet\""
+			}
+			myModifier 0.05
+			myRBTag < uid=1EC89F256402013C0000D96E226CF5EA > = NULLREFERENCE
+		}
+		VendorPriceModifierConditionList "Owes a Favor"
+		{
+			myUIInfo
+			{
+				myName "aurabesh = false, contextComment = \"BuyPrice Modifier for Owes a Favor\", enabled = true, guid = #3A296D0C62B060FD00007C33FAE9CDAB, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 647, text = \"Owes a Favor\", type = \"MenuLine\""
+				myDescription "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = -214532377, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_generic_01.spritesheet\""
+			}
+			myType OwesFavor
+			myModifier -0.3
+			myRBTag < uid=1EC89F256402013C0000D96F8AA0FE0B > = NULLREFERENCE
+			myCondition
+			{
+				myConditions
+				{
+					GameConditionContextVendorOwedFavorUsed "Owes a Favor NOT Used"
+					{
+					}
+					GameConditionGroup "Personal Requests Done >= 1 OR Granted Owes a Favor"
+					{
+						myOperator Or
+						myConditions
+						{
+							GameConditionContextVendorPersonalRequestsDone "Personal Requests Done >= 1"
+							{
+							}
+							GameConditionContextVendorOwesFavorGranted "Granted Owes a Favor"
+							{
+							}
+						}
+					}
+				}
+			}
+		}
+		VendorPriceModifierConditionList JawaHaggling
+		{
+			myUIInfo
+			{
+				myName "aurabesh = false, contextComment = \"BuyPrice Modifier for Jawa Haggling\", enabled = true, guid = #F4D8AE26650C3D800003EBC31CA02F0A, lineVersion = 6, maxLength = 0, productId = -1, sectionId = 647, text = \"Jawa Haggling\", type = \"MenuLine\""
+				myDescription "aurabesh = false, contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = -571580469, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_skill_icons_03.spritesheet\""
+			}
+			myType JawaHaggling
+			myModifier -0.1
+			myCondition
+			{
+				myConditions
+				{
+					GameConditionPlayerHasItem "New GameConditionPlayerHasItem"
+					{
+						myItem < uid=F4D8AE26650C3EEB00050C1EF67DDCCF > = DoM_skill_JawaHaggling F4D8AE26650C3EAD0003EBD5E7F72918
+					}
+				}
+			}
+		}
+		VendorPriceModifierConditionList "Miyuki Privileged Customer"
+		{
+			myUIInfo
+			{
+				myName "branch = \"DLC2\", contextComment = \"Name for a price modifier when the player has reached the privileged customer status with the Miyuki Trade League\", enabled = true, guid = #2AE2EC85674F0C5F000E88BBC074CA72, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 12361, text = \"Privileged Customer\", type = \"MenuLine\""
+				myDescription "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = -522958265, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_item_icons_05.spritesheet\""
+			}
+			myType MiyukiPrivilegedCustomer
+			myModifier -0.25
+			myCondition
+			{
+				myConditions
+				{
+					GameConditionPlayerHasItem "Player has Privileged Customer item"
+					{
+						myItem < uid=2AE2EC85674F0F7500110CB81F13853A > = Miyuki_Trade_League_Privilege_Customer 2AE2EC85674DCBE6000667C1BE82F770
+					}
+					GameConditionContextVendorIsCategory "Vendor is Miyuki"
+					{
+						myVendorCategory MiyukiTrader
+					}
+				}
+			}
+		}
+	}
+	mySellPriceModifiers
+	{
+		VendorPriceModifierReputation "Terrible Reputation"
+		{
+			myUIInfo
+			{
+				myName "aurabesh = false, contextComment = \"SellPrice modifier for terrible reputation\", enabled = true, guid = #8778CD3662B31C850001909D1BDCAC2F, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 647, text = \"Terrible Reputation\", type = \"MenuLine\""
+				myDescription "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = 325541488, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_reputation_icons_01.spritesheet\""
+			}
+			myModifier 0.0
+			myRBTag < uid=1EC89F256401E5ED0000D99E616DA07D > = NULLREFERENCE
+			myCondition
+			{
+				myOperator Equal
+			}
+		}
+		VendorPriceModifierReputation "Bad Reputation"
+		{
+			myUIInfo
+			{
+				myName "aurabesh = false, contextComment = \"SellPrice Modifier for Bad Reputation\", enabled = true, guid = #8778CD3662B31CB0000190A5106CAEAA, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 647, text = \"Bad Reputation\", type = \"MenuLine\""
+				myDescription "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = 325755501, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_reputation_icons_01.spritesheet\""
+			}
+			myModifier 0.0
+			myRBTag < uid=1EC89F256401E5ED0000D99F6638F0B8 > = NULLREFERENCE
+			myCondition
+			{
+				myReputationTier Bad
+				myOperator Equal
+			}
+		}
+		VendorPriceModifierReputation "Fair Reputation"
+		{
+			myUIInfo
+			{
+				myName "aurabesh = false, contextComment = \"SellPrice Modifier for Fair Reputation\", enabled = true, guid = #8778CD3662B31CC9000190AB7E37CFB1, lineVersion = 3, maxLength = 0, productId = -1, sectionId = -1, text = \"Fair Reputation\", type = \"MenuLine\""
+				myDescription "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = 325969514, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_reputation_icons_01.spritesheet\""
+			}
+			myModifier 0.0
+			myRBTag < uid=1EC89F256401E5F70000D9A04B554A5D > = NULLREFERENCE
+			myCondition
+			{
+				myReputationTier Fair
+				myOperator Equal
+			}
+		}
+		VendorPriceModifierReputation "Good Reputation"
+		{
+			myUIInfo
+			{
+				myName "aurabesh = false, contextComment = \"SellPrice Modifier for Good Reputation\", enabled = true, guid = #8778CD3662B31CFE000190B3AA4F17C4, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 647, text = \"Good Reputation\", type = \"MenuLine\""
+				myDescription "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = 326183527, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_reputation_icons_01.spritesheet\""
+			}
+			myModifier 0.0
+			myRBTag < uid=1EC89F256401E60C0000D9A18BBC356F > = NULLREFERENCE
+			myCondition
+			{
+				myReputationTier Good
+				myOperator Equal
+			}
+		}
+		VendorPriceModifierReputation "Excellent Reputation"
+		{
+			myUIInfo
+			{
+				myName "aurabesh = false, contextComment = \"SellPrice Modifier for Excellent Reputation\", enabled = true, guid = #8778CD3662B31D17000190B8C5E1B5FE, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 647, text = \"Excellent Reputation\", type = \"MenuLine\""
+				myDescription "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+				myIcon "mySpriteId = 326397540, mySpritesheet = F\"helix/ui/spritesheets/ui_spritesheet_reputation_icons_01.spritesheet\""
+			}
+			myModifier 0.0
+			myRBTag < uid=1EC89F256401E60C0000D9A287DE022D > = NULLREFERENCE
+			myCondition
+			{
+				myReputationTier Excellent
+				myOperator Equal
+			}
+		}
+		VendorPriceModifierConditionList JawaHaggling
+		{
+			myUIInfo
+			{
+				myName "branch = \"DLC2\", contextComment = \"Sell price Modifier for Jawa Haggling\", enabled = true, guid = #2AE2EC85675060A3000ADF7C07B1C106, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 10706, text = \"Jawa Haggling\", type = \"MenuLine\""
+				myDescription "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+			}
+			myType JawaHaggling
+			myModifier 0.1
+			myCondition
+			{
+				myConditions
+				{
+					GameConditionPlayerHasItem "New GameConditionPlayerHasItem"
+					{
+						myItem < uid=F4D8AE26653B8A1F000098E6E8A5F487 > = DoM_skill_JawaHaggling F4D8AE26650C3EAD0003EBD5E7F72918
+					}
+				}
+			}
+		}
+	}
+	mySellPricePercentage 0.4
+	myDefaultMaxItemQuantity 100
+	myCurrencySpentToRemoveSuspicious 300
+	mySellableItemCategories
+	{
+		ItemCategory Material Material
+		ItemCategory Trinket Trinket
+		ItemCategory Consumable Consumable
+		ItemCategory Valuable Valuable
+		ItemCategory DataItem DataItem
+		ItemCategory Junk Junk
+		ItemCategory QuestItems QuestItem
+	}
+	myServiceUIInfos
+	{
+		myItemShopBuy
+		{
+			myName "aurabesh = false, contextComment = \"Buy button for vendor services\", enabled = true, guid = #3C2FA92B635653C5000091DC3A78F7E3, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 647, text = \"Purchase\", type = \"MenuLine\""
+		}
+		myItemShopSell
+		{
+			myName "aurabesh = false, contextComment = \"Sell button for vendor services\", enabled = true, guid = #3C2FA92B635653FD000091DF18F0210B, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 647, text = \"Sell\", type = \"MenuLine\""
+		}
+		mySpeederComponents
+		{
+			myName "branch = \"\", contextComment = \"\", enabled = true, guid = #0711D229650AAED9000019223917C7B8, lineVersion = 1, maxLength = 0, productId = -1, sectionId = 10706, text = \"Upgrades\", type = \"MenuLine\""
+		}
+		mySpeederAppearance
+		{
+			myName "branch = \"\", contextComment = \"\", enabled = true, guid = #83E36AE3620A7AF00000208229097355, lineVersion = 1, maxLength = 0, productId = -1, sectionId = 10706, text = \"Appearance\", type = \"MenuLine\""
+		}
+		myShipComponents
+		{
+			myName "aurabesh = false, contextComment = \"Systems button for vendor services (changing ship components)\", enabled = true, guid = #3C2FA92B6356540E000091E274B4F63F, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 647, text = \"Systems\", type = \"MenuLine\""
+		}
+		myShipAppearance
+		{
+			myName "aurabesh = false, contextComment = \"Ship Apperance button for vendor services\", enabled = true, guid = #3C2FA92B635653C2000091DB4CDD0D67, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 647, text = \"Ship Appearance\", type = \"MenuLine\""
+		}
+		myPersonalRequest
+		{
+			myName "aurabesh = false, contextComment = \"Personal Requests button for vendor services\", enabled = true, guid = #5D372D37645E117A00007939F104FD14, lineVersion = 3, maxLength = 0, productId = -1, sectionId = 647, text = \"Requests\", type = \"MenuLine\""
+		}
+		myGiveData
+		{
+			myName "aurabesh = false, branch = \"MAIN\", contextComment = \"Give Data button for vendor services\", enabled = true, guid = #5D372D3765719E7C0008EF35D4050170, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 10706, text = \"Give Data\", type = \"MenuLine\""
+		}
+		myShipCargoUpgrade
+		{
+			myName "branch = \"DLC2\", contextComment = \"Name of the vendor service to upgrade the cargo\", enabled = true, guid = #2AE2EC8567877058000000D6715A1E5C, lineVersion = 4, maxLength = 0, productId = -1, sectionId = 12361, text = \"Cargo\", type = \"MenuLine\""
+		}
+	}
+	myCategoryUIInfos
+	{
+		myGeneric
+		{
+			myName "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+		}
+		myShady
+		{
+			myName "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+		}
+		myTech
+		{
+			myName "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+		}
+		myNature
+		{
+			myName "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+		}
+		mySpeederGarage
+		{
+			myName "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+		}
+		myShipMechanic
+		{
+			myName "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+		}
+		myMaker
+		{
+			myName "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+		}
+		myMiyukiTrader
+		{
+			myName "branch = \"\", contextComment = \"\", enabled = false, guid = #00000000000000000000000000000000, lineVersion = 0, maxLength = 0, productId = -1, sectionId = -1, text = \"\", type = \"MenuLine\""
+		}
+	}
+	myVendorStockReplenishingBrackets
+	{
+		VendorStockReplenishingBracket Consumables
+		{
+			myVendorReplenishingBracketList
+			{
+				VendorReplenishingBracket "Full Replenish Every Day"
+				{
+					myPercentageOfMaxToReplenish 1.0
+				}
+			}
+			myItemCategory Consumable
+		}
+		VendorStockReplenishingBracket "General materials"
+		{
+			myVendorReplenishingBracketList
+			{
+				VendorReplenishingBracket "Full Replenish Every Day"
+				{
+					myPercentageOfMaxToReplenish 1.0
+				}
+			}
+			myItemCategory Material
+		}
+		VendorStockReplenishingBracket "Blaster materials"
+		{
+			myVendorReplenishingBracketList
+			{
+				VendorReplenishingBracket "Full Replenish Every Day"
+				{
+					myPercentageOfMaxToReplenish 1.0
+				}
+			}
+			myItemCategory PartBlaster
+		}
+		VendorStockReplenishingBracket "Ship materials"
+		{
+			myVendorReplenishingBracketList
+			{
+				VendorReplenishingBracket "Full Replenish Every Day"
+				{
+					myPercentageOfMaxToReplenish 1.0
+				}
+			}
+			myItemCategory PartSpaceship
+		}
+		VendorStockReplenishingBracket "Speeder materials"
+		{
+			myVendorReplenishingBracketList
+			{
+				VendorReplenishingBracket "Full Replenish Every Day"
+				{
+					myPercentageOfMaxToReplenish 1.0
+				}
+			}
+			myItemCategory PartSpeeder
+		}
+		VendorStockReplenishingBracket "Reputation Loot"
+		{
+			myVendorReplenishingBracketList
+			{
+				VendorReplenishingBracket "Full Replenish Every Day"
+				{
+					myPercentageOfMaxToReplenish 1.0
+				}
+			}
+			myItemCategory DataItem
+		}
+	}
+	myNumberOfTrustedVendors < uid=E41F4D1B62B4245B000035DF4771CF48 > = gs_dom_Shoplifting_NumerOfTrustedCustomers E41F4D1B62B1B0CF000035A96EF8E718
+	myItemShopServices
+	{
+		VendorServiceType ItemShopBuy ItemShopBuy
+		VendorServiceType "New VendorServiceType" PersonalRequest
+	}
+	myPlayerRestrictionsDuringMenu < uid=0711D22965B112F000003324F605456B > = duringinteractionrestriction_openmenu 0711D22965B0E79F000269FF9D185ED6
+}
+
